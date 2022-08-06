@@ -30,13 +30,13 @@ router.patch("/posts/:id", async (req, res) => {
 			post.content = req.body.content
 		}
 
-        if (req.body.name) {
-			post.name = req.body.name
-		}
+		if (req.body.name) {
+				post.name = req.body.name
+			}
 
-        if (req.body.createdAt) {
-			post.createdAt = req.body.createdAt
-		}
+		if (req.body.createdAt) {
+				post.createdAt = req.body.createdAt
+			}
 
 
 		await post.save()
