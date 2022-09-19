@@ -5,7 +5,7 @@ const app = express();
 const routes = require("./routes")
 
 mongoose
-	.connect("mongodb+srv://admin:EmBF0uaVcUDEOwVb@testdb.izgvs.mongodb.net/?retryWrites=true&w=majority")
+	.connect("URI")
 	.then(() => {
         app.use(cors())
 		app.use(express.json())
